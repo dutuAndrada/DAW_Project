@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="https://github.com/dutuAndrada/DAW_Project/blob/main/README.md">About Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
