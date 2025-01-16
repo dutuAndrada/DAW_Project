@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-purple-dark">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img :src="logoUrl" alt="Logo" height="40" class="d-inline-block align-top">
+          <img :src="logoUrl" alt="Logo" height="100" class="d-inline-block align-top">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -91,7 +91,7 @@ export default {
   },
   data() {
     return {
-      logoUrl: "E:\\University2024\\Dezvoltarea Aplicatiilor Web\\learning-platform\\src\\assets\logo_purple.png", // Replace with your logo URL
+      logoUrl:require('@/assets/logo_purple.png'), 
     };
   },
 };
