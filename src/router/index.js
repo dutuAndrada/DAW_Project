@@ -1,19 +1,18 @@
-
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/HomeView.vue";
-import Courses from "../views/CoursesView.vue";
-import Profile from "../views/ProfileView.vue";
-import Login from "../components/LoginUser.vue";
-import Register from "../components/RegisterUser.vue";
-import Dashboard from "../components/DashboardUser.vue";
+import DashboardUser from "../components/DashboardUser.vue";
+import CoursesView from "../views/CoursesView.vue";
+import ProfileView from "../views/ProfileView.vue";
+import LoginUser from "../components/LoginUser.vue";
+import RegisterUser from "../components/RegisterUser.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
-  { path: "/courses", name: "Courses", component: Courses },
-  { path: "/profile", name: "Profile", component: Profile },
-  { path: "/login", name: "Login", component: Login },
-  { path: "/register", name: "Register", component: Register },
-  { path: "/dashboard", name: "Dashboard", component: Dashboard },
+  { path: "/courses", name: "Courses", component: CoursesView },
+  { path: "/profile", name: "Profile", component: ProfileView },
+  { path: "/login", name: "Login", component: LoginUser },
+  { path: "/register", name: "Register", component: RegisterUser },
+  { path: "/dashboard", name: "Dashboard", component: DashboardUser },
 ];
 
 const router = createRouter({
