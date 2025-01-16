@@ -42,41 +42,6 @@
     </div>
   </div>
 </template>
+<script src="@/views/courseView"></script>
 
-<script>
-import { computed } from 'vue';
-import { useStore } from 'vuex';
-
-export default {
-  setup() {
-    const store = useStore();
-    const courses = computed(() => store.state.courses);
-    const user = computed(() => store.state.user);
-    const enrolledCourses = computed(() => store.state.enrolledCourses || []);
-        const logoUrl = require('@/assets/logo_purple.png')
-
-    const userEnrolled = (course) => enrolledCourses.value.some((c) => c.id === course.id);
-
-    const enroll = async (course) => {
-      await store.dispatch('enrollCourse', course);
-    };
-
-    return { courses, userEnrolled, enroll, user, logoUrl };
-  },
-};
-</script>
-
-<style scoped>
-.bg-purple {
-  background-color: #673ab7;
-}
-.bg-purple-dark {
-    background-color: #512da8;
-}
-.bg-purple-light {
-    background-color: #d1c4e9;
-}
-.text-purple {
-    color: #673ab7;
-}
-</style>
+<style src="@/css/styles.css"></style>

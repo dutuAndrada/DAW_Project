@@ -1,0 +1,12 @@
+.bg-purple {
+    background-color: #673ab7; /* Deep Purple */
+  }
+  .bg-purple-dark {
+    background-color: #512da8;
+  }
+  .bg-purple-light {
+    background-color: #d1c4e9;
+  }
+  .text-purple {
+    color: #673ab7;
+  }
