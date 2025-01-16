@@ -10,3 +10,10 @@ Welcome to   My Project, an online learning community built with Vue.js. The mis
 *   **(Planned) Interactive Quizzes:** I plan to integrate interactive quizzes to enhance the learning experience and provide immediate feedback.
 
 I believe that learning should be an enjoyable and rewarding experience, and I'm committed to providing a platform that supports this belief.
+
+Bibliography:
+-https://vuejs.org/ ----> vue documentation
+
+-https://designer.microsoft.com/ -----> for logos and photos
+
+-https://www.youtube.com/watch?v=1GNsWa_EZdw -----> tutorial for vue +more
