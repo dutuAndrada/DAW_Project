@@ -16,7 +16,7 @@ export default {
     const handleRegister = async () => {
       registrationError.value = null;
       if (password.value !== confirmPassword.value) {
-        registrationError.value = "Parolele nu se potrivesc!";
+        registrationError.value = "Passwords don't match!";
         return;
       }
 
@@ -24,7 +24,7 @@ export default {
         await store.dispatch('register', { email: email.value, password: password.value });
         router.push('/login');
       } catch (error) {
-        registrationError.value = error.message || "Eroare la înregistrare.";
+        registrationError.value = error.message || "Error.";
       }
     };
 

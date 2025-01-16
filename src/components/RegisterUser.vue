@@ -41,7 +41,7 @@
               </div>
               <div v-if="registrationError" class="alert alert-danger">{{ registrationError }}</div>
               <button type="submit" class="btn btn-primary w-100">Register</button>
-              <p class="mt-3 text-center">Ai deja cont? <router-link to="/login">Autentifică-te</router-link></p>
+              <p class="mt-3 text-center">You already have an account? <router-link to="/login">Login</router-link></p>
             </form>
           </div>
         </div>

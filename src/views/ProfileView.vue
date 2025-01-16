@@ -25,10 +25,10 @@
       <template v-if="user">
         <p class="text-purple">Email: {{ user.email }}</p>
 
-        <div v-if="enrolledCourses.length > 0">
+        <div v-if="enrolledCoursesDetails.length > 0">
           <h3 class="text-purple mt-4">Enrolled Courses</h3>
           <div class="row">
-            <div class="col-md-4 mb-3" v-for="course in enrolledCourses" :key="course.id">
+            <div class="col-md-4 mb-3" v-for="course in enrolledCoursesDetails" :key="course.id"> 
               <div class="card bg-white border-0 shadow">
                 <div class="card-body">
                   <h5 class="card-title text-purple">{{ course.name }}</h5>

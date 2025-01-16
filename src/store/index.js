@@ -4,24 +4,9 @@ const store = createStore({
   state: {
     user: null,
     courses: [
-      {
-        id: 1,
-        name: "Introduction to Vue.js",
-        description:
-          "Learn the fundamentals of building interactive web applications with Vue.js, a popular JavaScript framework.",
-      },
-      {
-        id: 2,
-        name: "JavaScript for Beginners",
-        description:
-          "Get started with the core concepts of JavaScript, the building block of modern web development.",
-      },
-      {
-        id: 3,
-        name: "Building APIs with Node.js",
-        description:
-          "Learn how to create powerful APIs (Application Programming Interfaces) using Node.js and Express.",
-      },
+      { id: 1, name: "Introduction to Vue.js", description: "Learn Vue.js" },
+      { id: 2, name: "JavaScript for Beginners", description: "Learn JavaScript" },
+      { id: 3, name: "Building APIs with Node.js", description: "Learn Node.js APIs" },
     ],
     enrolledCourses: [],
   },
@@ -29,11 +14,16 @@ const store = createStore({
     setUser(state, user) {
       state.user = user;
     },
-    enrollCourse(state, course) {
-      console.log(`Enrolled in course: ${course.name}`);
+    enrollCourse(state, courseId) {
+      if (!state.enrolledCourses.includes(courseId)) {
+        state.enrolledCourses.push(courseId);
+      }
     },
   },
   actions: {
+    enrollCourse({ commit }, course) {
+      commit('enrollCourse', course.id); 
+    },
     login({ commit }, user) {
       commit('setUser', user);
     },
@@ -41,9 +31,13 @@ const store = createStore({
       commit('setUser', null);
     },
   },
-  getters: {
-    isAuthenticated: (state) => !!state.user,
-  },
+    getters: {
+        enrolledCoursesDetails: (state) => {
+            return state.enrolledCourses.map(courseId => {
+                return state.courses.find(course => course.id === courseId);
+            }).filter(course => course !== undefined); 
+        }
+    }
 });
 
 export default store;
