@@ -9,22 +9,10 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <router-link class="nav-link" to="/">Home</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/courses">Courses</router-link>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#">About Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item" v-if="user">
-                <router-link class="nav-link" to="/profile">Profile</router-link>
-            </li>
-            <li class="nav-item" v-else>
-                <router-link class="nav-link" to="/login">Login</router-link>
             </li>
           </ul>
         </div>
