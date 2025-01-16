@@ -12,6 +12,7 @@ Welcome to   My Project, an online learning community built with Vue.js. The mis
 I believe that learning should be an enjoyable and rewarding experience, and I'm committed to providing a platform that supports this belief.
 
 Bibliography:
+
 -https://vuejs.org/ ----> vue documentation
 
 -https://designer.microsoft.com/ -----> for logos and photos
